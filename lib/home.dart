@@ -1,3 +1,4 @@
+///File download from FlutterViz- Drag and drop a tools. For more details visit https://flutterviz.io/
 
 import 'package:flutter/material.dart';
 
@@ -23,7 +24,7 @@ class hk extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           children: [
             Padding(
-              padding: EdgeInsets.fromLTRB(0, 60, 0, 50),
+              padding: EdgeInsets.fromLTRB(0, 100, 0, 50),
               child: Align(
                 alignment: Alignment.center,
                 child: Text(
@@ -33,7 +34,7 @@ class hk extends StatelessWidget {
                   style: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
-                    fontSize: 25,
+                    fontSize: 35,
                     color: Color(0xffffffff),
                   ),
                 ),
@@ -69,13 +70,15 @@ class hk extends StatelessWidget {
                   hintStyle: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
-                    fontSize: 14,
+                    fontSize: 20,
                     color: Color(0xff000000),
                   ),
                   filled: true,
                   fillColor: Color(0xfff2f2f3),
                   isDense: false,
-                  contentPadding: EdgeInsets.fromLTRB(12, 8, 12, 8),
+                  contentPadding: EdgeInsets.fromLTRB(18, 8, 12, 8),
+                  prefixIcon:
+                      Icon(Icons.person, color: Color(0xff212435), size: 24),
                 ),
               ),
             ),
@@ -83,7 +86,7 @@ class hk extends StatelessWidget {
               padding: EdgeInsets.all(12),
               child: TextField(
                 controller: TextEditingController(),
-                obscureText: false,
+                obscureText: true,
                 textAlign: TextAlign.start,
                 maxLines: 1,
                 style: TextStyle(
@@ -109,13 +112,15 @@ class hk extends StatelessWidget {
                   hintStyle: TextStyle(
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
-                    fontSize: 14,
+                    fontSize: 20,
                     color: Color(0xff000000),
                   ),
                   filled: true,
                   fillColor: Color(0xfff2f2f3),
                   isDense: false,
-                  contentPadding: EdgeInsets.fromLTRB(12, 8, 12, 8),
+                  contentPadding: EdgeInsets.fromLTRB(18, 8, 12, 8),
+                  prefixIcon:
+                      Icon(Icons.vpn_key, color: Color(0xff212435), size: 24),
                 ),
               ),
             ),
@@ -128,7 +133,7 @@ class hk extends StatelessWidget {
                 children: [
                   Checkbox(
                     onChanged: (value) {},
-                    activeColor: Color(0xff3a57e8),
+                    activeColor: Color(0xff2733dc),
                     autofocus: false,
                     checkColor: Color(0xffffffff),
                     hoverColor: Color(0x42000000),
@@ -142,7 +147,7 @@ class hk extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w400,
                       fontStyle: FontStyle.normal,
-                      fontSize: 14,
+                      fontSize: 20,
                       color: Color(0xff000000),
                     ),
                   ),
@@ -162,20 +167,20 @@ class hk extends StatelessWidget {
                 child: Text(
                   "Login",
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 21,
                     fontWeight: FontWeight.w400,
                     fontStyle: FontStyle.normal,
                   ),
                 ),
                 textColor: Color(0xff000000),
-                height: 40,
-                minWidth: 140,
+                height: 60,
+                minWidth: 170,
               ),
             ),
             Align(
               alignment: Alignment(-0.0, 0.0),
               child: Padding(
-                padding: EdgeInsets.fromLTRB(60, 0, 0, 0),
+                padding: EdgeInsets.fromLTRB(28, 0, 0, 0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -190,16 +195,16 @@ class hk extends StatelessWidget {
                         style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontStyle: FontStyle.normal,
-                          fontSize: 14,
-                          color: Color(0xff000000),
+                          fontSize: 27,
+                          color: Color(0xffffffff),
                         ),
                       ),
                     ),
                     IconButton(
                       icon: Icon(Icons.help),
                       onPressed: () {},
-                      color: Color(0xff212435),
-                      iconSize: 24,
+                      color: Color(0xffffffff),
+                      iconSize: 30,
                     ),
                   ],
                 ),
